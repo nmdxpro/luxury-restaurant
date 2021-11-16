@@ -1,0 +1,54 @@
+.section3 {  
+    background-image: url("/images/background.png");
+    padding-bottom: 100px;
+    
+    .section3-title {
+        text-align: center;
+        line-height: 22px;
+        font-size: 35px;
+        padding-top: 97px;
+        font-weight: bold;
+        padding-bottom: 41px;
+    }
+
+    .section3-content {
+        width: auto;
+        padding-left: 50px;
+    }
+
+    .name-cheff {
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 17px;
+        padding-top: 25.5px;
+        background-color: #ffffff;
+        padding-bottom: 26px;
+        width: 270px;
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    .section3 {
+        padding-top: 15px;
+        padding-bottom: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .section3-title {
+            padding-top: 0px;
+        }
+    
+        .section3-content {
+            padding-left:  0px;
+        }
+
+        .s3-cont-img-big {
+            width: 100%;
+        }
+
+        .name-cheff {
+            width: 100%;
+        }
+    }    
+}
