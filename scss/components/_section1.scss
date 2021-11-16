@@ -1,5 +1,5 @@
 .section1 {
-    background-image: url(/images/s1-backgroud.png);
+    background-image: url(../images/s1-backgroud.png);
     height: 250px;
 
     .headline {
@@ -9,7 +9,7 @@
         font-weight: bold;
         padding-top: 37px;
     }
-
+    
     .s1-center {
         display: flex;
         position: relative;
