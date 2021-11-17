@@ -1,51 +1,48 @@
 .history {
     padding-bottom: 100px;
-}
 
-.history {
-    .history-title {
-        font-weight: 600;
-        padding-top: 97px;
-        padding-bottom: 34px;
-        font-size: 35px;
-        text-align: center;
-        line-height: 22px;
-    }
-    
-    .content {
-        font-size: 14px;
-        color: #5c6369;
-        line-height: 26px;
-        text-align: center;
-    }
-    
-    .video {
-        padding-top: 61px; 
-    }
-    
-    .note {
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 17px;
-        padding-top: 21px;
-        padding-bottom: 21px;
-    }
-    
-    .line {
-        color: #e3e3e3;
+    .container {
+        .history-title {
+            padding-top: 97px;
+            padding-bottom: 34px;
+            font-size: 35px;
+            line-height: 22px;}
+        
+        .history-text {
+            font-size: 14px;
+            color: #5c6369;
+            line-height: 26px;
+            text-align: center;
+        }
+        
+        .video {
+            padding-top: 61px; 
+        }
+        
+        .history-span {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 17px;
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
+        
+        .hline {
+            color: #e3e3e3;
+        }
     }
 }
     
 @media screen and (max-width: 768px) {
-    .section2 {
+    .history {
         padding: 15px;
     
-        .section2-title {
+        .history-title {
             padding-top: 0px;
             padding-bottom: 15px;
         }
     
-        .note {
+        .history-span {
             text-align: center;
             padding-top: 15px;
             padding-bottom: 15px;
