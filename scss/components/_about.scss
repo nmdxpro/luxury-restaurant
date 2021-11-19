@@ -1,6 +1,12 @@
-.headline {
+$break768: 768px;
+
+.about {
     background-image: url(../images/s1-backgroud.png);
     height: 250px;
+    @media screen and (max-width: $break768) {
+        position: relative;
+        z-index: 9;
+    }
 
     &-center {
         width: 333px;
@@ -32,4 +38,9 @@
             top: 41px;
         }
     }
+}
+
+.section1 {
+    position: relative;
+    z-index: 9;
 }
