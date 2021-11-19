@@ -1,4 +1,4 @@
-$('.section3-content ul').slick({
+$('.chefs ul').slick({
     dots: true,
     infinite: true,
     speed: 300,
@@ -33,5 +33,6 @@ $('.section3-content ul').slick({
         // instead of a settings object
     ]
     });
+
 
     

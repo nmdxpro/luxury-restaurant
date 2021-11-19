@@ -81,13 +81,14 @@ body {
     position: relative;
     bottom: 33px;
     padding-right: 15px;
+    cursor: pointer;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header .container .navigation {
-    display: none;
     padding-bottom: 73px;
+    display: none;
   }
 }
 
@@ -332,12 +333,21 @@ body {
   }
 }
 
-.section3 {
+.cooks {
   background-image: url("../images/background.png");
   padding-bottom: 100px;
 }
 
-.section3 .section3-title {
+@media screen and (max-width: 768px) {
+  .cooks {
+    padding-top: 15px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.cooks .cooks-title {
   text-align: center;
   line-height: 22px;
   font-size: 35px;
@@ -346,12 +356,24 @@ body {
   padding-bottom: 41px;
 }
 
-.section3 .section3-content {
+@media screen and (max-width: 768px) {
+  .cooks .cooks-title {
+    padding-top: 0px;
+  }
+}
+
+.cooks .chefs {
   width: auto;
   padding-left: 50px;
 }
 
-.section3 .name-cheff {
+@media screen and (max-width: 768px) {
+  .cooks .chefs {
+    padding-left: 0px;
+  }
+}
+
+.cooks .name {
   text-align: center;
   font-weight: bold;
   font-size: 15px;
@@ -363,22 +385,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .section3 {
-    padding-top: 15px;
-    padding-bottom: 45px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .section3 .section3-title {
-    padding-top: 0px;
-  }
-  .section3 .section3-content {
-    padding-left: 0px;
-  }
-  .section3 .s3-cont-img-big {
+  .cooks .name {
     width: 100%;
   }
-  .section3 .name-cheff {
+}
+
+@media screen and (max-width: 768px) {
+  .cooks .s3-cont-img-big {
     width: 100%;
   }
 }

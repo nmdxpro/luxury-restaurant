@@ -36,6 +36,7 @@ $break768: 768px;
 
         .toggle {
             display: none;
+
             @media screen and (max-width: $break768) {
             text-align: right;
             display: block;
@@ -44,13 +45,14 @@ $break768: 768px;
             position: relative;
             bottom: 33px;
             padding-right: 15px;
+            cursor: pointer;
             }
         }
 
         .navigation {
             @media screen and (max-width: $break768) {
-                display: none;
                 padding-bottom: 73px;
+                display: none;
             }
         }
 
