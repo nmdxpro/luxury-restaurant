@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
@@ -23,35 +23,33 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo">
+            <div class="header__logo">
                 <a href="#">
                     <img src="images/logo.png" alt="">
                 </a>
             </div>
 
-            <div class="menu">
+            <nav class="header__navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Recipe</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
                 <div class="toggle">
                     <i class="fas fa-bars"></i>
                 </div>
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Reservation</a></li>
-                        <li><a href="#">Recipe</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                   </ul>
-                </nav>
-            </div>
+            </nav>
 
             <div class="header__right">
-                <a href="#" class="cart-icon">
+                <a href="#" class="cart">
                      <img src="images/icon-cart.png" alt="">
                      <span>3</span>
                 </a>
-                <a href="#" class="button cta-button"><span>Book your table</span></a>
+                <a href="#" class="btn btn-cta"><span>Book your table</span></a>
             </div>
         </div>
     </header>
@@ -64,12 +62,10 @@
         })
     </script>
 
-    <div class="about">
-        <div class="about-center">
-            <img class="left-leaf" src="images/left_leaf.png" alt="">
-            <h1>About Us</h1>
-            <img class="right-leaf" src="images/right_leaf.png" alt="">
-        </div>
+    <div class="about">  
+        <img class="about__leaf about__leaf--left" src="images/left_leaf.png" alt="">
+        <h1>About Us</h1>
+        <img class="about__leaf about__leaf--right" src="images/right_leaf.png" alt="">
     </div>
 
     <div class="history">
@@ -124,7 +120,7 @@
                     </li>
                     <li class="chef">
                         <img class="s3-cont-img-big" src="images/image-cheff.png">
-                        <p class="name-cheff">CHEFF. JAMES DICO</p>
+                        <p class="name">CHEFF. JAMES DICO</p>
                     </li>
                     <li class="chef">
                         <img class="s3-cont-img-big" src="images/image-cheff.png">
@@ -147,64 +143,57 @@
         </div>
     </div>
 
-    <div class="section4">
-        <div class="section4-top">
-            <div class="section4-top-left">
-                <img class="" src="images/s4-top-left.png" alt="">
-            </div>
-            <div class="section4-top-right">
-                <h3 class="sec4-top-title">
+    <div class="speciality">
+        <div class="container">
+            <img class="speciality__img" src="images/s4-top-left.png" alt="">
+            <div class="speciality__content">
+                <h3 class="title">
                     Speciality
                 </h3>
-                <h5 class="sec4-top-subhead">
+                <h5>
                     EXCELLENT SERVICE
                 </h5>
-                <p class="sec4-top-text">
+                <p>
                     Survived not only five centuries, but also the leap into electronic typesetting,<br>
                     remaining essentially unchanged. 
                 </p>
-                <h5 class="sec4-top-subhead">
+                <h5>
                     FREE HOME DELIVERY
                 </h5>
-                <p class="sec4-top-text">
+                <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem<br>
                     Ipsum has been the industry's standard dummy text ever since the 1500s.
                 </p>
-                <h5 class="sec4-top-subhead">
+                <h5>
                     COOL ATMOSPHERE
                 </h5>
-                <p class="sec4-top-text">
+                <p>
                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop<br>
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum
                 </p>
             </div>
         </div>
- 
-        <div class="section4-bot">
-            <div class="sec4-bot-container">
-                <div class="sec4-bot-left">
-                    <h3 class="sec4-bot-title">
-                        Opening Hours
-                    </h3>
+    </div>
+
+    <div class="opening">
+        <div class="container">
+            <h3 class="title">
+                Opening Hours
+            </h3>
+
+            <div class="opening__time">
+                <p class="opening__time opening__time--primary">
+                    <i>Monday to Friday</i><br>
+                    <span>10am - 10pm</span>
+                </p>
+        
+                <p class="opening__time opening__time--secondary">
+                    <i>Saturday to Sunday</i><br>
+                    <span>09am - 11pm</span>
+                    </p>
                 </div>
-                <div class="sec4-bot-center">
-                    <div class="sec4-bot-content1">
-                        <p class="sec4-bot-text">
-                            <font size="4px"><i>Monday to Friday</i></font><br>
-                            <span>10am - 10pm</span>
-                        </p>
-                    </div>
-                    <div class="sec4-bot-content2">
-                        <p class="sec4-bot-text">
-                            <font size="4px"><i>Saturday to Sunday</i></font><br>
-                            <span>09am - 11pm</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="sec4-bot-right">
-                    <img class="s4-bot-img" src="images/s4-bot-img.png" alt="">
-                </div>
-            </div>
+
+            <img class="s4-bot-img" src="images/s4-bot-img.png" alt="">
         </div>
     </div>
 

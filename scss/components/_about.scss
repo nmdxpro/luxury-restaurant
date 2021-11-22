@@ -3,44 +3,18 @@ $break768: 768px;
 .about {
     background-image: url(../images/s1-backgroud.png);
     height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media screen and (max-width: $break768) {
         position: relative;
         z-index: 9;
     }
 
-    &-center {
-        width: 333px;
-        margin: auto;
-        padding-top: 70px;
-        display: flex;
-
-        h1 {
-            font-size: 56px;
-            line-height: 30px;
-            color: #ffffff;
-            font-weight: bold;
-            padding-top: 33px;
-        }
-        
-        .left-leaf {
-            width: 42px;
-            height: 22px;
-            position: relative;
-            top: 41px;
-            right: 8px;
-        }
-    
-        .right-leaf {
-            width: 42px;
-            height: 22px;
-            position: relative; 
-            left: 8px;
-            top: 41px;
-        }
+    h1 {
+        font-size: 56px;
+        line-height: 30px;
+        color: #ffffff;
+        margin: 0px 8px 0px 8px;
     }
-}
-
-.section1 {
-    position: relative;
-    z-index: 9;
 }
