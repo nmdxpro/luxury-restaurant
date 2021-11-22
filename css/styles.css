@@ -14,6 +14,11 @@ body {
   font-family: "Sintony", sans-serif;
 }
 
+h3 {
+  font-size: 35px;
+  line-height: 22px;
+}
+
 .container {
   max-width: 1169px;
   margin: auto;
@@ -21,8 +26,6 @@ body {
 
 .header {
   background: #fff;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 @media screen and (max-width: 768px) {
@@ -91,8 +94,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -117,6 +119,7 @@ body {
   text-decoration: none;
   padding-left: 15px;
   padding-right: 15px;
+  font-weight: bold;
 }
 
 .header__right {
@@ -216,10 +219,29 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.opening h3 {
+.opening__time h3 {
   text-align: left;
+}
+
+.opening__time p {
+  font-family: "Playfair Display", serif;
+  font-size: 17.5px;
+}
+
+.opening__time span {
+  font-size: 27px;
+  font-weight: bold;
+  color: #fea100;
+}
+
+.opening__img {
+  position: relative;
+  bottom: 60px;
 }
 
 .about {
@@ -260,42 +282,40 @@ body {
   }
 }
 
-.history .container .video {
-  padding-top: 61px;
-}
-
-@media screen and (max-width: 768px) {
-  .history .container .video {
-    padding-top: 15px;
-  }
-}
-
-.history .container .hline {
-  color: #e3e3e3;
-}
-
-.history-title {
+.history__title {
   padding-top: 97px;
   padding-bottom: 34px;
-  font-size: 35px;
-  line-height: 22px;
 }
 
 @media screen and (max-width: 768px) {
-  .history-title {
+  .history__title {
     padding-top: 0px;
     padding-bottom: 15px;
   }
 }
 
-.history-text {
+.history__text {
   font-size: 14px;
   color: #5c6369;
   line-height: 26px;
   text-align: center;
 }
 
-.history-span {
+.history .container {
+  width: 969px;
+}
+
+.history__video {
+  padding-top: 61px;
+}
+
+@media screen and (max-width: 768px) {
+  .history__video {
+    padding-top: 15px;
+  }
+}
+
+.history__span {
   font-weight: bold;
   font-size: 13px;
   line-height: 17px;
@@ -304,11 +324,15 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .history-span {
+  .history__span {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
   }
+}
+
+.history__hline {
+  color: #e3e3e3;
 }
 
 .cooks {

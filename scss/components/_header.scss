@@ -2,7 +2,6 @@ $break768: 768px;
 
 .header {
     background: #fff;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .05);
     @media screen and (max-width: $break768) {
         position: relative;
         z-index: 10;
@@ -52,8 +51,8 @@ $break768: 768px;
             list-style: none;
             padding-left: 0;
             display: flex;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 40px;
+            
             @media screen and (max-width: $break768) {
                 display: block;
                 text-align: center;
@@ -75,6 +74,7 @@ $break768: 768px;
             text-decoration: none;
             padding-left: 15px;
             padding-right: 15px;
+            font-weight: bold;
         }
     }
 

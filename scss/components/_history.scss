@@ -5,54 +5,50 @@ $break768: 768px;
 
     @media screen and (max-width: $break768) {
         padding: 15px;
+    }
     
-    }
-
-    .container {
-       
-        .video {
-            padding-top: 61px; 
-
-            @media screen and (max-width: $break768) {
-                padding-top: 15px;
-            }
-        }
-                
-        .hline {
-            color: #e3e3e3;
-        }
-    }
-
-    &-title {
+    &__title {
         padding-top: 97px;
         padding-bottom: 34px;
-        font-size: 35px;
-        line-height: 22px;
-
         @media screen and (max-width: $break768) {
             padding-top: 0px;
             padding-bottom: 15px;
         }
     }
 
-    &-text {
+    &__text {
         font-size: 14px;
         color: #5c6369;
         line-height: 26px;
         text-align: center;
     }
 
-    &-span {
+    .container {
+        width: 969px;
+    }
+
+    &__video {
+        
+        padding-top: 61px; 
+        @media screen and (max-width: $break768) {
+            padding-top: 15px;
+        }
+    }
+    
+    &__span {
         font-weight: bold;
         font-size: 13px;
         line-height: 17px;
         padding-top: 21px;
         padding-bottom: 21px;
-
         @media screen and (max-width: $break768) {
             text-align: center;
             padding-top: 15px;
             padding-bottom: 15px;
         }
+    }
+
+    &__hline {
+        color: #e3e3e3;
     }
 }
