@@ -1,4 +1,4 @@
-$('.chefs ul').slick({
+$('.cooks__chefs ul').slick({
     dots: true,
     infinite: true,
     speed: 300,

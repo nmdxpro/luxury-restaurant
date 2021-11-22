@@ -349,7 +349,7 @@ h3 {
   }
 }
 
-.cooks .cooks-title {
+.cooks__title {
   text-align: center;
   line-height: 22px;
   font-size: 35px;
@@ -359,23 +359,23 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .cooks .cooks-title {
+  .cooks__title {
     padding-top: 0px;
   }
 }
 
-.cooks .chefs {
+.cooks__chefs {
   width: auto;
   padding-left: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .cooks .chefs {
+  .cooks__chefs {
     padding-left: 0px;
   }
 }
 
-.cooks .name {
+.cooks__chefs p {
   text-align: center;
   font-weight: bold;
   font-size: 15px;
@@ -387,21 +387,26 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .cooks .name {
+  .cooks__chefs p {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .cooks .s3-cont-img-big {
+  .cooks__chefs img {
     width: 100%;
   }
+}
+
+.speciality {
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .speciality .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
 }
 
 .speciality__img {
@@ -474,6 +479,10 @@ h3 {
   background: #373844;
   padding-top: 80px;
   padding-bottom: 65px;
+}
+
+.footer .container {
+  width: 1122px;
 }
 
 .footer .footer__top {

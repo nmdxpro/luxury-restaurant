@@ -11,7 +11,7 @@ $break768: 768px;
         padding-right: 15px;
     }
 
-    .cooks-title {
+    &__title {
         text-align: center;
         line-height: 22px;
         font-size: 35px;
@@ -24,31 +24,31 @@ $break768: 768px;
         }
     }
 
-    .chefs {
+    &__chefs {
         width: auto;
         padding-left: 50px;
         @media screen and (max-width: 768px) {
             padding-left:  0px;
         }
-    }
-
-    .name {
-        text-align: center;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 17px;
-        padding-top: 25.5px;
-        background-color: #ffffff;
-        padding-bottom: 26px;
-        width: 270px;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-        }
-    }
     
-    .s3-cont-img-big {
-        @media screen and (max-width: 768px) {
-            width: 100%;
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 17px;
+            padding-top: 25.5px;
+            background-color: #ffffff;
+            padding-bottom: 26px;
+            width: 270px;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    
+        img {
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 }
