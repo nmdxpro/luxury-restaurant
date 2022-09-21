@@ -55,14 +55,17 @@
     </header>
 
     <script>
-        $(document).ready(function() {
-            $('.toggle').click(function() {
-                $('.navigation').slideToggle();
-            });
-        })
+        (function($){
+            'use strict';
+            $(document).ready(function() {
+                $('.toggle').click(function() {
+                    $('.navigation').slideToggle();
+                });
+            })
+        })(jQuery)
     </script>
 
-    <div class="about">  
+    <div class="about">
         <img class="about__leaf about__leaf--left" src="images/left_leaf.png" alt="">
         <h1>About Us</h1>
         <img class="about__leaf about__leaf--right" src="images/right_leaf.png" alt="">
@@ -72,10 +75,10 @@
         <div class="container">
             <h3 class="history__title">Our History</h3>
             <p class="history__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the<br> 
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type<br> 
-                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the<br> 
-                leap into electronic typesetting, remaining essentially unchanged.     
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the<br>
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type<br>
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the<br>
+                leap into electronic typesetting, remaining essentially unchanged.
             </p>
             <div class="history__video">
                 <iframe width="100%" height="446px" src="https://www.youtube.com/embed/bbmdmecz5cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -83,7 +86,7 @@
             <p class="history__span">OUR HOTEL VIDEO</p>
             <hr class="history__hline">
         </div>
-    </div> 
+    </div>
 
     <div class="cooks">
         <div class="container">
@@ -97,7 +100,7 @@
                     <li class="cooks__chefs--chef">
                         <img class="s3-cont-img-big" src="images/image-cheff.png">
                         <p class="name">CHEFF. PETER VASKO</p>
-                    </li>     
+                    </li>
                     <li class="cooks__chefs--chef">
                         <img class="s3-cont-img-big" src="images/image-cheff.png">
                         <p class="name">CHEFF. MARIYA THOMAS</p>
@@ -138,13 +141,13 @@
                         <img class="s3-cont-img-big" src="images/image-cheff.png">
                         <p class="name">CHEFF. JAMES DICO</p>
                     </li>
-                </ul>     
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="speciality">
-        
+
         <div class="container">
             <img class="speciality__img" src="images/s4-top-left.png" alt="">
             <div class="speciality__content">
@@ -156,7 +159,7 @@
                 </h5>
                 <p>
                     Survived not only five centuries, but also the leap into electronic typesetting,<br>
-                    remaining essentially unchanged. 
+                    remaining essentially unchanged.
                 </p>
                 <h5>
                     FREE HOME DELIVERY
@@ -214,7 +217,7 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="footer__widget big">
                     <h3 class="footer-h3-center">News letter</h3>
                     <p class="footer-text-center">Enter your email address and subscribe daily newsletter</p>
@@ -228,7 +231,7 @@
                         <li><a href="#" target="_blank"><img src="images/google.png" alt=""></a></li>
                     </ul>
                 </div>
-    
+
                 <div class="footer__widget">
                     <h3>Our app avilable</h3>
                     <a href="#" class="store"><img src="images/app-store.png" alt=""></a>
